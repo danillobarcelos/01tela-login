@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+}
+body {
+    background-color: rgba(163, 163, 147, 0.438);
+    background-image: url(imagens/Tech\ Life\ -\ Communication.png);
+    background-repeat: no-repeat;
+    background-position: calc(3vw) calc(63vh);
+    background-size: 20%;
+}
+
+.principal {
+    width: 50vw;
+    height: 60vh;
+    padding: 20px;
+    position: relative;
+    top: 40vh;
+    left: 50vw;
+    transform: translate(-28vw, -25vh);
+    
+    background-color: transparent;
+
+}
+
+.tela-principal {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 5px;
+    width: inherit;
+    height: inherit;
+
+
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 1px rgba(184, 184, 184, 0.664);
+}
+
+.login,
+.registro {
+    margin-top: 13vh;
+    padding: 10px;
+    width: 20vw;
+    height: 30vh;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: start;
+
+    width: inherit;
+    height: inherit;
+}
+
+div>label {
+    font-size: 1.1rem;
+    display: block;
+    margin: 3px;
+}
+
+input {
+    height: 1.1rem;
+    padding: 7px;
+    width: 19vw;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.178);
+    border-radius: 20px;
+    border-width: 2px;
+    border-style: none;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: inherit;
+}
+
+button {
+    width: 120px;
+    padding: 5px;
+    border-style: none;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.178);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.918);
+    color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.178);
+}
+
+@media screen and (max-width: 970px) {
+    body {
+        background-color: rgba(163, 163, 147, 0.438);
+        background-image: none;
+    }
+
+    .principal {
+        height: 90vh;
+        padding: 20px;
+        position: relative;
+        top: 37vh;
+        left: 50vw;
+        transform: translate(-28vw, -35vh);
+    }
+
+    .tela-principal {
+        flex-direction: column;
+        align-items: center;
+      
+    }
+
+    .login,
+    .registro {
+        padding: 10px;
+        width: 100%;
+        height: 20vh;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: start;
+        width: 100%;
+    }
+    
+    div>label {
+        margin: 5px;
+    }
+
+    button {
+        max-width: 150px;
+        min-width: 30px;
+    }
+}
