@@ -5,6 +5,7 @@
     margin: 0px;
     font-family: 'Lato', sans-serif;
 }
+
 body {
     background-color: rgba(163, 163, 147, 0.438);
     background-image: url(imagens/Tech\ Life\ -\ Communication.png);
@@ -21,7 +22,7 @@ body {
     top: 40vh;
     left: 50vw;
     transform: translate(-28vw, -25vh);
-    
+
     background-color: transparent;
 
 }
@@ -102,6 +103,7 @@ button:hover {
     box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.178);
 }
 
+
 @media screen and (max-width: 970px) {
     body {
         background-color: rgba(163, 163, 147, 0.438);
@@ -109,25 +111,28 @@ button:hover {
     }
 
     .principal {
-        height: 90vh;
+        height: 70vh;
         padding: 20px;
         position: relative;
-        top: 37vh;
-        left: 50vw;
+        top: 45vh;
+        left: 28vw;
         transform: translate(-28vw, -35vh);
     }
 
     .tela-principal {
+        position: absolute;
+        min-width: 85vw;
         flex-direction: column;
         align-items: center;
-      
+        justify-content: center;
     }
 
     .login,
     .registro {
-        padding: 10px;
+        position: relative;
         width: 100%;
         height: 20vh;
+        top: -5vh;
     }
 
     .formulario {
@@ -138,13 +143,28 @@ button:hover {
         align-items: start;
         width: 100%;
     }
-    
+
     div>label {
         margin: 5px;
+    }
+
+    div>input {
+        width: 35vw;
     }
 
     button {
         max-width: 150px;
         min-width: 30px;
     }
+}
+
+@media screen and (max-width: 500px) {
+    .tela-principal {
+        width: 300px;
+    }
+
+    div>input {
+        width: 50vw;
+    }
+
 }
